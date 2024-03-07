@@ -1,0 +1,94 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Memo
+% LaTeX Template
+% Version 1.0 (30/12/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rob Oakes (http://www.oak-tree.us) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a6paper,9pt,landscape]{texMemo} % Set the paper size (letterpaper, a4paper, etc) and font size (10pt, 11pt or 12pt)
+\usepackage{parskip} % Adds spacing between paragraphs
+\usepackage[normalem]{ulem}
+\usepackage{textcomp}
+% usage
+% 
+\usepackage[table]{xcolor}
+\usepackage{framed}
+\usepackage[strict]{changepage}    
+
+%Defining colour with different models.
+\definecolor{mypink1}{rgb}{0.858, 0.188, 0.478}
+\definecolor{mypink2}{RGB}{219, 48, 122}
+\definecolor{mypink3}{cmyk}{0, 0.7808, 0.4429, 0.1412}
+\definecolor{mygray}{gray}{0.8}
+
+\definecolor{formalshade}{rgb}{0.95,0.95,1}    
+
+\newenvironment{formal}{%
+  \def\FrameCommand{%
+    \hspace{1pt}%
+    {\color{mypink3}\vrule width 6pt}%
+    {\color{formalshade}\vrule width 4pt}%
+    \colorbox{formalshade}%
+  }%
+  \MakeFramed{\advance\hsize-\width\FrameRestore}%
+  \noindent\hspace{-4.55pt}% disable indenting first paragraph
+  \begin{adjustwidth}{}{7pt}%
+  \vspace{2pt}\vspace{2pt}%
+}
+{%
+  \vspace{2pt}\end{adjustwidth}\endMakeFramed%
+}
+
+
+
+\setlength{\parindent}{15pt} % Indent paragraphs
+
+%----------------------------------------------------------------------------------------
+%	MEMO INFORMATION
+%----------------------------------------------------------------------------------------
+
+\memoto{Hasan A.} % Recipient(s)
+
+\memofrom{Yours Truly} % Sender(s)
+
+\memosubject{Beware of \textbf{MindTrap}} % Memo subject
+
+\memonumb{20240306-1}
+
+%\memodate{\today{}} % Date, set to \today for automatically printing todays date%
+
+\logo{\includegraphics[width=0.3\textwidth]{logo.png}} % Institution logo at the top right of the memo, comment out this line for no logo
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the memo header information
+\thispagestyle{empty} %hide page number
+%----------------------------------------------------------------------------------------
+%	MEMO CONTENT
+%----------------------------------------------------------------------------------------
+ 
+\begin{formal}
+Problem $\rightarrow$ No Solution $\rightarrow$   Reaction $\rightarrow$  Problem  $\rightarrow$   ......
+\end{formal}
+\begin{flushright}
+\textit{this is the cycle of mindtrap} 
+\end{flushright}
+
+\indent Cut the cycle, don't let yourself fall into mindtrap spiral.
+
+\textit{Peace and Love ......}
+%----------------------------------------------------------------------------------------
+
+\end{document}
